@@ -15,12 +15,12 @@ public class Main {
         String nombre = scanner.next();
         System.out.printf("Hola "+nombre);
 
-        //System.out.printf("Decime tu edad\n");
+        System.out.printf("Decime tu edad\n");
 
         //El metodo nextInt() lee lo ingresado por consola como un entero
-        //int edad = scanner.nextInt();
-        //int proximaEdad = edad+1;
-        //System.out.printf("Vas a complir "+ (proximaEdad));
+        int edad = scanner.nextInt();
+        int proximaEdad = edad+1;
+        System.out.printf("Vas a complir "+ (proximaEdad));
 
         //Sentencia if
         System.out.printf("Hola, ingresa tu edad: ");
@@ -28,7 +28,7 @@ public class Main {
 
         if(edad<1 || edad>130){
             System.out.printf("Ingresa una edad valida");
-            //edad = scanner.nextInt();
+            edad = scanner.nextInt();
         } else if (edad>=18){
             System.out.printf("Podes pasar");
         } else {
