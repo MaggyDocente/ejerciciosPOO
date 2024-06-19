@@ -12,7 +12,7 @@ public class Cliente {
         this.nombre = nombre;
         this.dni = dni;
         this.saldo= 0.0;
-        this.nroDeCuenta = 123456;
+        this.nroDeCuenta = crearNroCuenta();
         this.cbu = 123456;
         this.alias = nombre+"ramdom";
     }
@@ -48,4 +48,8 @@ public class Cliente {
     public void setAlias(String nuevoAlias){
         this.alias = nuevoAlias;
     }
+
+    public static int crearNroCuenta(){return 12345;}
+
+
 }
